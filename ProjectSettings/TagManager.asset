@@ -9,6 +9,11 @@ TagManager:
   - Object
   - Ball
   - Barrel
+  - Audio
+  - RegularScreen
+  - PausedScreen
+  - GameOverScreen
+  - ScoreFinal
   layers:
   - Default
   - TransparentFX

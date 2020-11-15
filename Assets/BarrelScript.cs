@@ -1,32 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BarrelScript : MonoBehaviour
 {
     public AudioClip explodeSound;
-    public GameObject explosion;
-    // Start is called before the first frame update
+    public delegate void onBarrelHit();
+    public static event onBarrelHit whenHit;
+    public GameObject plusOne;
+    
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
     }
+
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("I am being hit");
         if (collision.gameObject.tag == "Ball")
         {
             AudioSource.PlayClipAtPoint(explodeSound, gameObject.transform.position);
-            //GameObject explode = Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
-            //explode.GetComponent<ParticleSystem>().Play();
+            whenHit();
+            Instantiate(plusOne, collision.contacts[0].point + new Vector3(0.0f, 1.0f, 0.0f), Quaternion.identity);
             Destroy(gameObject);
-
         }
     }
 }
