@@ -13,8 +13,12 @@ Players have three lives, and will lose a life when coming into contact with a z
 
 Barrels are instantiated around the player, and players can run into the barrel to collect more ammo.
 
-### Game Demo
+### Short Game Demo
 
 <div align="center">
   <a href="https://youtu.be/wvuZsjhTBjI"><img src="https://i.imgur.com/TjcE1og.png" alt="IMAGE ALT TEXT"></a>
 </div>
+
+###### Note
+
+Most of the code is stored in the Assets/Scripts folder. The Gameplay scene is stored in the Assets/Scenes folder. 
