@@ -14,6 +14,7 @@ TagManager:
   - PausedScreen
   - GameOverScreen
   - ScoreFinal
+  - Zombie
   layers:
   - Default
   - TransparentFX
