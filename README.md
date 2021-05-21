@@ -21,4 +21,4 @@ Barrels are instantiated around the player, and players can run into the barrel 
 
 ###### Note
 
-Most of the code is stored in the Assets/Scripts folder. The Gameplay scene is stored in the Assets/Scenes folder. 
+The code I've written is stored in the Assets/Scripts folder. The Gameplay scene you see in the demo video is stored in the Assets/Scenes folder. 
